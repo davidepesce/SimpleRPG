@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Entities/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Player/player.png" type="Texture" id=2]
+[ext_resource path="res://map_tiles.png" type="Texture" id=3]
+[ext_resource path="res://Flowers.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5, 7 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 7.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 7.07107
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 6, 7 )
+
+[node name="Root" type="Node"]
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 160, 90 )
+z_index = 1
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource( 1 )
+
+[node name="Rock" type="StaticBody2D" parent="."]
+position = Vector2( 220, 90 )
+
+[node name="Sprite" type="Sprite" parent="Rock"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock"]
+shape = SubResource( 2 )
+
+[node name="MovingRock" type="RigidBody2D" parent="."]
+position = Vector2( 210, 30 )
+gravity_scale = 0.0
+linear_damp = 10.0
+angular_damp = 5.0
+
+[node name="Sprite" type="Sprite" parent="MovingRock"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovingRock"]
+shape = SubResource( 3 )
+
+[node name="Flowers" type="Area2D" parent="."]
+position = Vector2( 140, 100 )
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Flowers"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Flowers"]
+shape = SubResource( 4 )
+[connection signal="body_entered" from="Flowers" to="Flowers" method="_on_Flowers_body_entered"]
