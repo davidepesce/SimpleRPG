@@ -12,3 +12,4 @@ The tutorials so far:
    - [Bonus tutorial: Dragging the player with the mouse](https://www.davidepesce.com/2019/10/14/godot-tutorial-5-1-dragging-player-with-mouse/)
 6. [Physics and collisions](https://www.davidepesce.com/2019/10/02/godot-tutorial-6-physics-and-collisions/)
 7. [Using tile maps to create the game map](https://www.davidepesce.com/2019/10/18/godot-tutorial-7-using-tile-maps-to-create-game-map/)
+8. [2D Sprite animation](https://www.davidepesce.com/2019/10/23/godot-tutorial-8-2d-sprite-animation/)
