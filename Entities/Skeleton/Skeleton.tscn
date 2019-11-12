@@ -1,0 +1,125 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://Entities/Skeleton/Skeleton.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Skeleton/skeleton_down_idle_1.png" type="Texture" id=2]
+[ext_resource path="res://Entities/Skeleton/skeleton_down_attack_1.png" type="Texture" id=3]
+[ext_resource path="res://Entities/Skeleton/skeleton_down_attack_2.png" type="Texture" id=4]
+[ext_resource path="res://Entities/Skeleton/skeleton_up_idle_1.png" type="Texture" id=5]
+[ext_resource path="res://Entities/Skeleton/skeleton_up_idle_2.png" type="Texture" id=6]
+[ext_resource path="res://Entities/Skeleton/skeleton_left_idle_1.png" type="Texture" id=7]
+[ext_resource path="res://Entities/Skeleton/skeleton_left_attack_1.png" type="Texture" id=8]
+[ext_resource path="res://Entities/Skeleton/skeleton_left_attack_2.png" type="Texture" id=9]
+[ext_resource path="res://Entities/Skeleton/skeleton_right_idle_1.png" type="Texture" id=10]
+[ext_resource path="res://Entities/Skeleton/skeleton_right_walk_1.png" type="Texture" id=11]
+[ext_resource path="res://Entities/Skeleton/skeleton_right_walk_2.png" type="Texture" id=12]
+[ext_resource path="res://Entities/Skeleton/skeleton_down_walk_1.png" type="Texture" id=13]
+[ext_resource path="res://Entities/Skeleton/skeleton_down_walk_2.png" type="Texture" id=14]
+[ext_resource path="res://Entities/Skeleton/skeleton_up_attack_1.png" type="Texture" id=15]
+[ext_resource path="res://Entities/Skeleton/skeleton_up_attack_2.png" type="Texture" id=16]
+[ext_resource path="res://Entities/Skeleton/skeleton_down_idle_2.png" type="Texture" id=17]
+[ext_resource path="res://Entities/Skeleton/skeleton_right_idle_2.png" type="Texture" id=18]
+[ext_resource path="res://Entities/Skeleton/skeleton_left_walk_1.png" type="Texture" id=19]
+[ext_resource path="res://Entities/Skeleton/skeleton_left_walk_2.png" type="Texture" id=20]
+[ext_resource path="res://Entities/Skeleton/skeleton_up_walk_1.png" type="Texture" id=21]
+[ext_resource path="res://Entities/Skeleton/skeleton_up_walk_2.png" type="Texture" id=22]
+[ext_resource path="res://Entities/Skeleton/skeleton_left_idle_2.png" type="Texture" id=23]
+[ext_resource path="res://Entities/Skeleton/skeleton_right_attack_1.png" type="Texture" id=24]
+[ext_resource path="res://Entities/Skeleton/skeleton_right_attack_2.png" type="Texture" id=25]
+[ext_resource path="res://Entities/Skeleton/skeleton_death_1.png" type="Texture" id=26]
+[ext_resource path="res://Entities/Skeleton/skeleton_death_2.png" type="Texture" id=27]
+[ext_resource path="res://Entities/Skeleton/skeleton_death_3.png" type="Texture" id=28]
+[ext_resource path="res://Entities/Skeleton/skeleton_death_4.png" type="Texture" id=29]
+[ext_resource path="res://Entities/Skeleton/skeleton_death_5.png" type="Texture" id=30]
+[ext_resource path="res://Entities/Skeleton/skeleton_death_6.png" type="Texture" id=31]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "down_attack",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "up_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "left_attack",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "right_walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 13 ), ExtResource( 2 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "down_walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": false,
+"name": "up_attack",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "right_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 19 ), ExtResource( 7 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "left_walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 21 ), ExtResource( 5 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "up_walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": false,
+"name": "right_attack",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": false,
+"name": "death",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 26 ) ],
+"loop": false,
+"name": "birth",
+"speed": 7.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5, 7 )
+
+[node name="Skeleton" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+z_index = 1
+frames = SubResource( 1 )
+animation = "down_idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
