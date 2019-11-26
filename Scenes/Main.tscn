@@ -1,38 +1,38 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Entities/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Player/player_down_idle_1.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Player/player_down_attack_1.png" type="Texture" id=3]
 [ext_resource path="res://Entities/Player/player_down_attack_2.png" type="Texture" id=4]
-[ext_resource path="res://Entities/Player/player_down_walk_1.png" type="Texture" id=5]
-[ext_resource path="res://Entities/Player/player_down_walk_2.png" type="Texture" id=6]
+[ext_resource path="res://Entities/Player/player_up_idle_1.png" type="Texture" id=5]
+[ext_resource path="res://Entities/Player/player_up_idle_2.png" type="Texture" id=6]
 [ext_resource path="res://Entities/Player/player_left_idle_1.png" type="Texture" id=7]
-[ext_resource path="res://Entities/Player/player_left_walk_1.png" type="Texture" id=8]
-[ext_resource path="res://Entities/Player/player_left_walk_2.png" type="Texture" id=9]
-[ext_resource path="res://Entities/Player/player_up_idle_1.png" type="Texture" id=10]
-[ext_resource path="res://Entities/Player/player_up_idle_2.png" type="Texture" id=11]
-[ext_resource path="res://Entities/Player/player_left_attack_1.png" type="Texture" id=12]
-[ext_resource path="res://Entities/Player/player_left_attack_2.png" type="Texture" id=13]
-[ext_resource path="res://Entities/Player/player_down_idle_2.png" type="Texture" id=14]
-[ext_resource path="res://Entities/Player/player_left_idle_2.png" type="Texture" id=15]
-[ext_resource path="res://Entities/Player/player_right_idle_1.png" type="Texture" id=16]
-[ext_resource path="res://Entities/Player/player_right_walk_1.png" type="Texture" id=17]
-[ext_resource path="res://Entities/Player/player_right_walk_2.png" type="Texture" id=18]
-[ext_resource path="res://Entities/Player/player_up_walk_1.png" type="Texture" id=19]
-[ext_resource path="res://Entities/Player/player_up_walk_2.png" type="Texture" id=20]
-[ext_resource path="res://Entities/Player/player_right_attack_1.png" type="Texture" id=21]
-[ext_resource path="res://Entities/Player/player_right_attack_2.png" type="Texture" id=22]
-[ext_resource path="res://Entities/Player/player_up_attack_1.png" type="Texture" id=23]
-[ext_resource path="res://Entities/Player/player_up_attack_2.png" type="Texture" id=24]
-[ext_resource path="res://Entities/Player/player_right_idle_2.png" type="Texture" id=25]
+[ext_resource path="res://Entities/Player/player_left_attack_1.png" type="Texture" id=8]
+[ext_resource path="res://Entities/Player/player_left_attack_2.png" type="Texture" id=9]
+[ext_resource path="res://Entities/Player/player_right_idle_1.png" type="Texture" id=10]
+[ext_resource path="res://Entities/Player/player_right_walk_1.png" type="Texture" id=11]
+[ext_resource path="res://Entities/Player/player_right_walk_2.png" type="Texture" id=12]
+[ext_resource path="res://Entities/Player/player_right_attack_1.png" type="Texture" id=13]
+[ext_resource path="res://Entities/Player/player_right_attack_2.png" type="Texture" id=14]
+[ext_resource path="res://Entities/Player/player_up_walk_1.png" type="Texture" id=15]
+[ext_resource path="res://Entities/Player/player_up_walk_2.png" type="Texture" id=16]
+[ext_resource path="res://Entities/Player/player_down_idle_2.png" type="Texture" id=17]
+[ext_resource path="res://Entities/Player/player_left_walk_1.png" type="Texture" id=18]
+[ext_resource path="res://Entities/Player/player_left_walk_2.png" type="Texture" id=19]
+[ext_resource path="res://Entities/Player/player_up_attack_1.png" type="Texture" id=20]
+[ext_resource path="res://Entities/Player/player_up_attack_2.png" type="Texture" id=21]
+[ext_resource path="res://Entities/Player/player_down_walk_1.png" type="Texture" id=22]
+[ext_resource path="res://Entities/Player/player_down_walk_2.png" type="Texture" id=23]
+[ext_resource path="res://Entities/Player/player_right_idle_2.png" type="Texture" id=24]
+[ext_resource path="res://Entities/Player/player_left_idle_2.png" type="Texture" id=25]
 [ext_resource path="res://Entities/Player/player_right_fireball_1.png" type="Texture" id=26]
 [ext_resource path="res://Entities/Player/player_right_fireball_2.png" type="Texture" id=27]
-[ext_resource path="res://Entities/Player/player_up_fireball_1.png" type="Texture" id=28]
-[ext_resource path="res://Entities/Player/player_up_fireball_2.png" type="Texture" id=29]
-[ext_resource path="res://Entities/Player/player_left_fireball_1.png" type="Texture" id=30]
-[ext_resource path="res://Entities/Player/player_left_fireball_2.png" type="Texture" id=31]
-[ext_resource path="res://Entities/Player/player_down_fireball_1.png" type="Texture" id=32]
-[ext_resource path="res://Entities/Player/player_down_fireball_2.png" type="Texture" id=33]
+[ext_resource path="res://Entities/Player/player_down_fireball_1.png" type="Texture" id=28]
+[ext_resource path="res://Entities/Player/player_down_fireball_2.png" type="Texture" id=29]
+[ext_resource path="res://Entities/Player/player_up_fireball_1.png" type="Texture" id=30]
+[ext_resource path="res://Entities/Player/player_up_fireball_2.png" type="Texture" id=31]
+[ext_resource path="res://Entities/Player/player_left_fireball_1.png" type="Texture" id=32]
+[ext_resource path="res://Entities/Player/player_left_fireball_2.png" type="Texture" id=33]
 [ext_resource path="res://Tilesets/MapTileset.tres" type="TileSet" id=34]
 [ext_resource path="res://GUI/HealthBar.gd" type="Script" id=35]
 [ext_resource path="res://GUI/ManaBar.gd" type="Script" id=36]
@@ -47,84 +47,115 @@ animations = [ {
 "name": "down_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "down_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "left_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "up_idle",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": false,
 "name": "left_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "down_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "left_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 12 ) ],
 "loop": true,
 "name": "right_walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 20 ) ],
-"loop": true,
-"name": "up_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 21 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": false,
 "name": "right_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 23 ), ExtResource( 24 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 15 ), ExtResource( 5 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "up_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 7 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "left_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 20 ), ExtResource( 21 ) ],
 "loop": false,
 "name": "up_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 25 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 22 ), ExtResource( 2 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "down_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 24 ) ],
 "loop": true,
 "name": "right_idle",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 26 ), ExtResource( 27 ) ],
 "loop": false,
 "name": "right_fireball",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": false,
+"name": "down_fireball",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": false,
 "name": "up_fireball",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 32 ), ExtResource( 33 ) ],
 "loop": false,
 "name": "left_fireball",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 32 ), ExtResource( 33 ) ],
-"loop": false,
-"name": "down_fireball",
 "speed": 7.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 5, 7 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "Game Over"
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CanvasLayer/GameOver:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Hit"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="Root" type="Node"]
 
@@ -137,6 +168,7 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 1 )
 animation = "down_idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -144,6 +176,14 @@ shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
+
+[node name="RayCast2D" type="RayCast2D" parent="Player"]
+enabled = true
+cast_to = Vector2( 0, 8 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+"anims/Game Over" = SubResource( 4 )
+anims/Hit = SubResource( 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 34 )
@@ -276,6 +316,21 @@ margin_bottom = 16.0
 custom_fonts/font = ExtResource( 37 )
 text = "0"
 align = 2
+
+[node name="GameOver" type="ColorRect" parent="CanvasLayer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 320.0
+margin_bottom = 180.0
+color = Color( 0.54902, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="CanvasLayer/GameOver"]
+margin_left = 125.0
+margin_top = 85.0
+margin_right = 195.0
+margin_bottom = 95.0
+custom_fonts/font = ExtResource( 37 )
+text = "GAME OVER"
+align = 1
 
 [node name="SkeletonSpawner" parent="." instance=ExtResource( 39 )]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/Health" method="_on_Player_player_stats_changed"]

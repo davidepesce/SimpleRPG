@@ -15,3 +15,4 @@ The tutorials so far:
 8. [2D Sprite animation](https://www.davidepesce.com/2019/10/23/godot-tutorial-8-2d-sprite-animation/)
 9. [Designing the game GUI](https://www.davidepesce.com/2019/10/30/godot-tutorial-9-designing-game-gui/)
 10. [Monsters and Artificial Intelligence](https://www.davidepesce.com/2019/11/12/godot-tutorial-10-monsters-and-artificial-intelligence/)
+11. [Attacks, Damage & Death](https://www.davidepesce.com/2019/11/25/godot-tutorial-11-attacks-damage-death/)

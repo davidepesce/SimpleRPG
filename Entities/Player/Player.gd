@@ -13,6 +13,17 @@ var mana = 100
 var mana_max = 100
 var mana_regeneration = 2
 
+# Attack variables
+var attack_cooldown_time = 1000
+var next_attack_time = 0
+var attack_damage = 30
+
+# Fireball variables
+var fireball_damage = 50
+var fireball_cooldown_time = 1000
+var next_fireball_time = 0
+var fireball_scene = preload("res://Entities/Fireball/Fireball.tscn")
+
 # Animation variables
 var last_direction = Vector2(0, 1)
 var attack_playing = false
@@ -71,6 +82,10 @@ func _physics_process(delta):
 	# Animate player based on direction
 	if not attack_playing:
 		animates_player(direction)
+	
+	# Turn RayCast2D toward movement direction
+	if direction != Vector2.ZERO:
+		$RayCast2D.cast_to = direction.normalized() * 8
 
 
 func _input_event(viewport, event, shape_idx):
@@ -85,16 +100,33 @@ func _input(event):
 			drag_enabled = false
 
 	if event.is_action_pressed("attack"):
-		attack_playing = true
-		var animation = get_animation_direction(last_direction) + "_attack"
-		$Sprite.play(animation)
+		# Check if player can attack
+		var now = OS.get_ticks_msec()
+		if now >= next_attack_time:
+			# What's the target?
+			var target = $RayCast2D.get_collider()
+			if target != null:
+				if target.name.find("Skeleton") >= 0:
+					# Skeleton hit!
+					target.hit(attack_damage)
+			# Play attack animation
+			attack_playing = true
+			var animation = get_animation_direction(last_direction) + "_attack"
+			$Sprite.play(animation)
+			# Add cooldown time to current time
+			next_attack_time = now + attack_cooldown_time
 	elif event.is_action_pressed("fireball"):
-		if mana >= 25:
+		var now = OS.get_ticks_msec()
+		if mana >= 25 and now >= next_attack_time:
+			# Update mana
 			mana = mana - 25
 			emit_signal("player_stats_changed")
+			# Play fireball animation
 			attack_playing = true
 			var animation = get_animation_direction(last_direction) + "_fireball"
 			$Sprite.play(animation)
+			# Add cooldown time to current time
+			next_fireball_time = now + fireball_cooldown_time
 
 
 func get_animation_direction(direction: Vector2):
@@ -108,6 +140,7 @@ func get_animation_direction(direction: Vector2):
 	elif norm_direction.x >= 0.707:
 		return "right"
 	return "down"
+
 
 func animates_player(direction: Vector2):
 	if direction != Vector2.ZERO:
@@ -128,3 +161,20 @@ func animates_player(direction: Vector2):
 
 func _on_Sprite_animation_finished():
 	attack_playing = false
+	if $Sprite.animation.ends_with("_fireball"):
+		# Instantiate Fireball
+		var fireball = fireball_scene.instance()
+		fireball.attack_damage = fireball_damage
+		fireball.direction = last_direction.normalized()
+		fireball.position = position + last_direction.normalized() * 4
+		get_tree().root.get_node("Root").add_child(fireball)
+
+
+func hit(damage):
+	health -= damage
+	emit_signal("player_stats_changed")
+	if health <= 0:
+		set_process(false)
+		$AnimationPlayer.play("Game Over")
+	else:
+		$AnimationPlayer.play("Hit")
