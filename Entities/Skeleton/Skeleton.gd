@@ -27,6 +27,9 @@ var bounce_countdown = 0
 # Animation variables
 var other_animation_playing = false
 
+# Reference to potion scene
+var potion_scene = preload("res://Entities/Potion/Potion.tscn")
+
 
 func _ready():
 	player = get_tree().root.get_node("Root/Player")
@@ -146,6 +149,12 @@ func hit(damage):
 		other_animation_playing = true
 		$AnimatedSprite.play("death")
 		emit_signal("death")
+		# 80% probability to drop a potion on death
+		if randf() <= 0.8:
+			var potion = potion_scene.instance()
+			potion.type = randi() % 2
+			get_tree().root.get_node("Root").add_child(potion)
+			potion.position = position
 
 
 func _on_AnimatedSprite_frame_changed():

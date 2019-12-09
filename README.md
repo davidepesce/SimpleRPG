@@ -16,3 +16,4 @@ The tutorials so far:
 9. [Designing the game GUI](https://www.davidepesce.com/2019/10/30/godot-tutorial-9-designing-game-gui/)
 10. [Monsters and Artificial Intelligence](https://www.davidepesce.com/2019/11/12/godot-tutorial-10-monsters-and-artificial-intelligence/)
 11. [Attacks, Damage & Death](https://www.davidepesce.com/2019/11/25/godot-tutorial-11-attacks-damage-death/)
+12. [Picking and Using Items](https://www.davidepesce.com/2019/12/09/godot-tutorial-12-picking-and-using-items/)
