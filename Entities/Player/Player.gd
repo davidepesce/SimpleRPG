@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 signal player_stats_changed
+signal player_level_up
 
 # Player movement speed
 export var speed = 75
@@ -12,6 +13,9 @@ var health_regeneration = 1
 var mana = 100
 var mana_max = 100
 var mana_regeneration = 2
+var xp = 0;
+var xp_next_level = 100;
+var level = 1;
 
 # Player inventory
 enum Potion { HEALTH, MANA }
@@ -201,6 +205,16 @@ func add_potion(type):
 		health_potions = health_potions + 1
 	else:
 		mana_potions = mana_potions + 1
+	emit_signal("player_stats_changed", self)
+
+
+func add_xp(value):
+	xp += value
+	# Has the player reached the next level?
+	if xp >= xp_next_level:
+		level += 1
+		xp_next_level *= 2
+		emit_signal("player_level_up")
 	emit_signal("player_stats_changed", self)
 
 

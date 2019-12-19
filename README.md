@@ -17,3 +17,4 @@ The tutorials so far:
 10. [Monsters and Artificial Intelligence](https://www.davidepesce.com/2019/11/12/godot-tutorial-10-monsters-and-artificial-intelligence/)
 11. [Attacks, Damage & Death](https://www.davidepesce.com/2019/11/25/godot-tutorial-11-attacks-damage-death/)
 12. [Picking and Using Items](https://www.davidepesce.com/2019/12/09/godot-tutorial-12-picking-and-using-items/)
+13. [Experience Points and Level advancement](https://www.davidepesce.com/2019/12/19/godot-tutorial-13-experience-points-and-level-advancement/)

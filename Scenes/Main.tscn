@@ -1,47 +1,51 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://Entities/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Player/player_down_idle_1.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Player/player_down_attack_1.png" type="Texture" id=3]
 [ext_resource path="res://Entities/Player/player_down_attack_2.png" type="Texture" id=4]
-[ext_resource path="res://Entities/Player/player_right_idle_1.png" type="Texture" id=5]
-[ext_resource path="res://Entities/Player/player_right_walk_1.png" type="Texture" id=6]
-[ext_resource path="res://Entities/Player/player_right_walk_2.png" type="Texture" id=7]
-[ext_resource path="res://Entities/Player/player_right_attack_1.png" type="Texture" id=8]
-[ext_resource path="res://Entities/Player/player_right_attack_2.png" type="Texture" id=9]
-[ext_resource path="res://Entities/Player/player_left_idle_1.png" type="Texture" id=10]
-[ext_resource path="res://Entities/Player/player_left_attack_1.png" type="Texture" id=11]
-[ext_resource path="res://Entities/Player/player_left_attack_2.png" type="Texture" id=12]
-[ext_resource path="res://Entities/Player/player_up_idle_1.png" type="Texture" id=13]
-[ext_resource path="res://Entities/Player/player_up_walk_1.png" type="Texture" id=14]
-[ext_resource path="res://Entities/Player/player_up_walk_2.png" type="Texture" id=15]
-[ext_resource path="res://Entities/Player/player_down_idle_2.png" type="Texture" id=16]
-[ext_resource path="res://Entities/Player/player_left_walk_1.png" type="Texture" id=17]
-[ext_resource path="res://Entities/Player/player_left_walk_2.png" type="Texture" id=18]
-[ext_resource path="res://Entities/Player/player_up_idle_2.png" type="Texture" id=19]
+[ext_resource path="res://Entities/Player/player_up_idle_1.png" type="Texture" id=5]
+[ext_resource path="res://Entities/Player/player_up_idle_2.png" type="Texture" id=6]
+[ext_resource path="res://Entities/Player/player_left_idle_1.png" type="Texture" id=7]
+[ext_resource path="res://Entities/Player/player_left_attack_1.png" type="Texture" id=8]
+[ext_resource path="res://Entities/Player/player_left_attack_2.png" type="Texture" id=9]
+[ext_resource path="res://Entities/Player/player_right_idle_1.png" type="Texture" id=10]
+[ext_resource path="res://Entities/Player/player_right_walk_1.png" type="Texture" id=11]
+[ext_resource path="res://Entities/Player/player_right_walk_2.png" type="Texture" id=12]
+[ext_resource path="res://Entities/Player/player_right_attack_1.png" type="Texture" id=13]
+[ext_resource path="res://Entities/Player/player_right_attack_2.png" type="Texture" id=14]
+[ext_resource path="res://Entities/Player/player_up_walk_1.png" type="Texture" id=15]
+[ext_resource path="res://Entities/Player/player_up_walk_2.png" type="Texture" id=16]
+[ext_resource path="res://Entities/Player/player_down_idle_2.png" type="Texture" id=17]
+[ext_resource path="res://Entities/Player/player_left_walk_1.png" type="Texture" id=18]
+[ext_resource path="res://Entities/Player/player_left_walk_2.png" type="Texture" id=19]
 [ext_resource path="res://Entities/Player/player_up_attack_1.png" type="Texture" id=20]
 [ext_resource path="res://Entities/Player/player_up_attack_2.png" type="Texture" id=21]
-[ext_resource path="res://Entities/Player/player_right_idle_2.png" type="Texture" id=22]
+[ext_resource path="res://Entities/Player/player_left_idle_2.png" type="Texture" id=22]
 [ext_resource path="res://Entities/Player/player_down_walk_1.png" type="Texture" id=23]
 [ext_resource path="res://Entities/Player/player_down_walk_2.png" type="Texture" id=24]
-[ext_resource path="res://Entities/Player/player_left_idle_2.png" type="Texture" id=25]
+[ext_resource path="res://Entities/Player/player_right_idle_2.png" type="Texture" id=25]
 [ext_resource path="res://Entities/Player/player_right_fireball_1.png" type="Texture" id=26]
 [ext_resource path="res://Entities/Player/player_right_fireball_2.png" type="Texture" id=27]
-[ext_resource path="res://Entities/Player/player_down_fireball_1.png" type="Texture" id=28]
-[ext_resource path="res://Entities/Player/player_down_fireball_2.png" type="Texture" id=29]
-[ext_resource path="res://Entities/Player/player_up_fireball_1.png" type="Texture" id=30]
-[ext_resource path="res://Entities/Player/player_up_fireball_2.png" type="Texture" id=31]
-[ext_resource path="res://Entities/Player/player_left_fireball_1.png" type="Texture" id=32]
-[ext_resource path="res://Entities/Player/player_left_fireball_2.png" type="Texture" id=33]
+[ext_resource path="res://Entities/Player/player_up_fireball_1.png" type="Texture" id=28]
+[ext_resource path="res://Entities/Player/player_up_fireball_2.png" type="Texture" id=29]
+[ext_resource path="res://Entities/Player/player_left_fireball_1.png" type="Texture" id=30]
+[ext_resource path="res://Entities/Player/player_left_fireball_2.png" type="Texture" id=31]
+[ext_resource path="res://Entities/Player/player_down_fireball_1.png" type="Texture" id=32]
+[ext_resource path="res://Entities/Player/player_down_fireball_2.png" type="Texture" id=33]
 [ext_resource path="res://Tilesets/MapTileset.tres" type="TileSet" id=34]
 [ext_resource path="res://GUI/HealthBar.gd" type="Script" id=35]
 [ext_resource path="res://GUI/ManaBar.gd" type="Script" id=36]
-[ext_resource path="res://Fonts/Font.tres" type="DynamicFont" id=37]
-[ext_resource path="res://GUI/HealthPotions.gd" type="Script" id=38]
-[ext_resource path="res://GUI/potions.png" type="Texture" id=39]
-[ext_resource path="res://GUI/ManaPotions.gd" type="Script" id=40]
-[ext_resource path="res://Entities/SkeletonSpawner/SkeletonSpawner.tscn" type="PackedScene" id=41]
-[ext_resource path="res://Entities/Potion/Potion.tscn" type="PackedScene" id=42]
+[ext_resource path="res://GUI/XP.gd" type="Script" id=37]
+[ext_resource path="res://Fonts/Font.tres" type="DynamicFont" id=38]
+[ext_resource path="res://GUI/HealthPotions.gd" type="Script" id=39]
+[ext_resource path="res://GUI/potions.png" type="Texture" id=40]
+[ext_resource path="res://GUI/ManaPotions.gd" type="Script" id=41]
+[ext_resource path="res://GUI/LevelPopup.gd" type="Script" id=42]
+[ext_resource path="res://GUI/health_bonus.png" type="Texture" id=43]
+[ext_resource path="res://GUI/mana_bonus.png" type="Texture" id=44]
+[ext_resource path="res://Entities/SkeletonSpawner/SkeletonSpawner.tscn" type="PackedScene" id=45]
+[ext_resource path="res://Entities/Potion/Potion.tscn" type="PackedScene" id=46]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -50,49 +54,49 @@ animations = [ {
 "name": "down_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "right_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 8 ), ExtResource( 9 ) ],
-"loop": false,
-"name": "right_attack",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
-"loop": false,
-"name": "left_attack",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "up_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 16 ) ],
-"loop": true,
-"name": "down_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "left_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 19 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "up_idle",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "left_attack",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "right_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "right_attack",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 15 ), ExtResource( 5 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "up_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 7 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "left_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 20 ), ExtResource( 21 ) ],
 "loop": false,
 "name": "up_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 22 ) ],
 "loop": true,
-"name": "right_idle",
+"name": "left_idle",
 "speed": 1.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 23 ), ExtResource( 2 ), ExtResource( 24 ) ],
@@ -102,27 +106,27 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 10 ), ExtResource( 25 ) ],
 "loop": true,
-"name": "left_idle",
+"name": "right_idle",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 26 ), ExtResource( 27 ) ],
 "loop": false,
 "name": "right_fireball",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 28 ), ExtResource( 29 ) ],
-"loop": false,
-"name": "down_fireball",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 28 ), ExtResource( 29 ) ],
 "loop": false,
 "name": "up_fireball",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": false,
 "name": "left_fireball",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": false,
+"name": "down_fireball",
 "speed": 7.0
 } ]
 
@@ -203,7 +207,6 @@ format = 1
 tile_data = PoolIntArray( 393277, 4, 0, 524348, 4, 0, 589871, 4, 0, 589886, 4, 0, 655421, 4, 0, 655424, 4, 0, 852024, 4, 0, 917561, 4, 0, 1048580, 4, 0, 1048620, 4, 0, 1114135, 4, 0, 1245201, 4, 0, 1310738, 4, 0, 1376310, 4, 0, 1441803, 4, 0, 2097217, 4, 0, 2621470, 4, 0, 2687009, 4, 0, 2752544, 4, 0, 2818077, 4, 0, 2883621, 4, 0, 3080211, 4, 0, 3211290, 4, 0, 3276818, 4, 0, 3342384, 4, 0, 3342405, 4, 0, 3735629, 4, 0, 3801161, 4, 0, 3801163, 4, 0, 3866698, 4, 0, 3866702, 4, 0, 3932222, 4, 0, 3932236, 4, 0, 3932243, 4, 0, 3997769, 4, 0, 3997774, 4, 0, 4063307, 4, 0, 4390993, 4, 0, 4718685, 4, 0, 4980746, 4, 0, 4980754, 4, 0, 5046281, 4, 0, 5177354, 4, 0, 5177360, 4, 0, 5242897, 4, 0, 5701660, 4, 0, 5701718, 4, 0, 5767224, 4, 0, 5767262, 4, 0, 5832758, 4, 0, 5832794, 4, 0, 5898258, 4, 0, 5898295, 4, 0, 5898297, 4, 0, 5963867, 4, 0, 6029365, 4, 0, 6029400, 4, 0, 6094938, 4, 0 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-editor/display_folded = true
 
 [node name="Health" type="ColorRect" parent="CanvasLayer"]
 margin_left = 3.0
@@ -241,13 +244,14 @@ margin_top = 158.0
 margin_right = 196.0
 margin_bottom = 178.0
 color = Color( 0, 0, 0, 0.627451 )
+script = ExtResource( 37 )
 
 [node name="LabelXP" type="Label" parent="CanvasLayer/XP"]
 margin_left = 2.0
 margin_top = 1.0
 margin_right = 22.0
 margin_bottom = 11.0
-custom_fonts/font = ExtResource( 37 )
+custom_fonts/font = ExtResource( 38 )
 text = "XP:"
 
 [node name="LabelLevel" type="Label" parent="CanvasLayer/XP"]
@@ -255,7 +259,7 @@ margin_left = 2.0
 margin_top = 10.0
 margin_right = 22.0
 margin_bottom = 20.0
-custom_fonts/font = ExtResource( 37 )
+custom_fonts/font = ExtResource( 38 )
 text = "LVL:"
 
 [node name="ValueXP" type="Label" parent="CanvasLayer/XP"]
@@ -263,7 +267,7 @@ margin_left = 21.0
 margin_top = 1.0
 margin_right = 71.0
 margin_bottom = 11.0
-custom_fonts/font = ExtResource( 37 )
+custom_fonts/font = ExtResource( 38 )
 text = "0/100"
 align = 2
 
@@ -272,7 +276,7 @@ margin_left = 21.0
 margin_top = 10.0
 margin_right = 71.0
 margin_bottom = 20.0
-custom_fonts/font = ExtResource( 37 )
+custom_fonts/font = ExtResource( 38 )
 text = "1"
 align = 2
 
@@ -282,11 +286,11 @@ margin_top = 158.0
 margin_right = 279.0
 margin_bottom = 178.0
 color = Color( 0, 0, 0, 0.627451 )
-script = ExtResource( 38 )
+script = ExtResource( 39 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/HealthPotions"]
 position = Vector2( 10, 10 )
-texture = ExtResource( 39 )
+texture = ExtResource( 40 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 16, 16 )
 
@@ -295,7 +299,7 @@ margin_left = 19.0
 margin_top = 6.0
 margin_right = 33.0
 margin_bottom = 16.0
-custom_fonts/font = ExtResource( 37 )
+custom_fonts/font = ExtResource( 38 )
 text = "0"
 align = 2
 
@@ -305,11 +309,11 @@ margin_top = 158.0
 margin_right = 317.0
 margin_bottom = 178.0
 color = Color( 0, 0, 0, 0.627451 )
-script = ExtResource( 40 )
+script = ExtResource( 41 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/ManaPotions"]
 position = Vector2( 10, 10 )
-texture = ExtResource( 39 )
+texture = ExtResource( 40 )
 region_enabled = true
 region_rect = Rect2( 16, 0, 16, 16 )
 
@@ -318,7 +322,7 @@ margin_left = 19.0
 margin_top = 6.0
 margin_right = 33.0
 margin_bottom = 16.0
-custom_fonts/font = ExtResource( 37 )
+custom_fonts/font = ExtResource( 38 )
 text = "0"
 align = 2
 
@@ -333,20 +337,69 @@ margin_left = 125.0
 margin_top = 85.0
 margin_right = 195.0
 margin_bottom = 95.0
-custom_fonts/font = ExtResource( 37 )
+custom_fonts/font = ExtResource( 38 )
 text = "GAME OVER"
 align = 1
 
-[node name="SkeletonSpawner" parent="." instance=ExtResource( 41 )]
+[node name="LevelPopup" type="Popup" parent="CanvasLayer"]
+pause_mode = 2
+visible = true
+margin_right = 100.0
+margin_bottom = 50.0
+popup_exclusive = true
+script = ExtResource( 42 )
 
-[node name="Potion" parent="." instance=ExtResource( 42 )]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/LevelPopup"]
+margin_right = 100.0
+margin_bottom = 50.0
+
+[node name="Label" type="Label" parent="CanvasLayer/LevelPopup/ColorRect"]
+margin_top = 1.0
+margin_right = 100.0
+margin_bottom = 11.0
+custom_fonts/font = ExtResource( 38 )
+custom_colors/font_color = Color( 0.352941, 0.352941, 0.352941, 1 )
+text = "New Level!"
+align = 1
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/LevelPopup/ColorRect"]
+position = Vector2( 31, 30 )
+texture = ExtResource( 43 )
+
+[node name="Sprite2" type="Sprite" parent="CanvasLayer/LevelPopup/ColorRect"]
+position = Vector2( 69, 30 )
+texture = ExtResource( 44 )
+
+[node name="Label2" type="Label" parent="CanvasLayer/LevelPopup/ColorRect"]
+margin_left = 7.0
+margin_top = 25.0
+margin_right = 13.0
+margin_bottom = 35.0
+custom_fonts/font = ExtResource( 38 )
+custom_colors/font_color = Color( 0.352941, 0.352941, 0.352941, 1 )
+text = "A"
+
+[node name="Label3" type="Label" parent="CanvasLayer/LevelPopup/ColorRect"]
+margin_left = 88.0
+margin_top = 25.0
+margin_right = 94.0
+margin_bottom = 35.0
+custom_fonts/font = ExtResource( 38 )
+custom_colors/font_color = Color( 0.352941, 0.352941, 0.352941, 1 )
+text = "B"
+
+[node name="SkeletonSpawner" parent="." instance=ExtResource( 45 )]
+
+[node name="Potion" parent="." instance=ExtResource( 46 )]
 position = Vector2( 190, 103 )
 
-[node name="Potion2" parent="." instance=ExtResource( 42 )]
+[node name="Potion2" parent="." instance=ExtResource( 46 )]
 position = Vector2( 196, 76 )
 type = 1
-[connection signal="player_stats_changed" from="Player" to="CanvasLayer/Health" method="_on_Player_player_stats_changed"]
-[connection signal="player_stats_changed" from="Player" to="CanvasLayer/Mana" method="_on_Player_player_stats_changed"]
-[connection signal="player_stats_changed" from="Player" to="CanvasLayer/HealthPotions" method="_on_Player_player_stats_changed"]
+[connection signal="player_level_up" from="Player" to="CanvasLayer/LevelPopup" method="_on_Player_player_level_up"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/ManaPotions" method="_on_Player_player_stats_changed"]
+[connection signal="player_stats_changed" from="Player" to="CanvasLayer/Mana" method="_on_Player_player_stats_changed"]
+[connection signal="player_stats_changed" from="Player" to="CanvasLayer/XP" method="_on_Player_player_stats_changed"]
+[connection signal="player_stats_changed" from="Player" to="CanvasLayer/Health" method="_on_Player_player_stats_changed"]
+[connection signal="player_stats_changed" from="Player" to="CanvasLayer/HealthPotions" method="_on_Player_player_stats_changed"]
 [connection signal="animation_finished" from="Player/Sprite" to="Player" method="_on_Sprite_animation_finished"]

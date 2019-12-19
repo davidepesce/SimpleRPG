@@ -155,7 +155,8 @@ func hit(damage):
 			potion.type = randi() % 2
 			get_tree().root.get_node("Root").add_child(potion)
 			potion.position = position
-
+		# Add XP to player
+		player.add_xp(25)
 
 func _on_AnimatedSprite_frame_changed():
 	if $AnimatedSprite.animation.ends_with("_attack") and $AnimatedSprite.frame == 1:
