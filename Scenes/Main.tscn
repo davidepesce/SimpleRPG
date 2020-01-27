@@ -1,38 +1,38 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Entities/Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://Entities/Player/player_up_idle_1.png" type="Texture" id=2]
-[ext_resource path="res://Entities/Player/player_up_attack_1.png" type="Texture" id=3]
-[ext_resource path="res://Entities/Player/player_up_attack_2.png" type="Texture" id=4]
-[ext_resource path="res://Entities/Player/player_right_idle_1.png" type="Texture" id=5]
-[ext_resource path="res://Entities/Player/player_right_idle_2.png" type="Texture" id=6]
-[ext_resource path="res://Entities/Player/player_left_idle_1.png" type="Texture" id=7]
-[ext_resource path="res://Entities/Player/player_left_idle_2.png" type="Texture" id=8]
-[ext_resource path="res://Entities/Player/player_down_idle_1.png" type="Texture" id=9]
-[ext_resource path="res://Entities/Player/player_down_walk_1.png" type="Texture" id=10]
-[ext_resource path="res://Entities/Player/player_down_walk_2.png" type="Texture" id=11]
-[ext_resource path="res://Entities/Player/player_down_idle_2.png" type="Texture" id=12]
-[ext_resource path="res://Entities/Player/player_left_walk_1.png" type="Texture" id=13]
-[ext_resource path="res://Entities/Player/player_left_walk_2.png" type="Texture" id=14]
-[ext_resource path="res://Entities/Player/player_left_attack_1.png" type="Texture" id=15]
-[ext_resource path="res://Entities/Player/player_left_attack_2.png" type="Texture" id=16]
-[ext_resource path="res://Entities/Player/player_right_walk_1.png" type="Texture" id=17]
-[ext_resource path="res://Entities/Player/player_right_walk_2.png" type="Texture" id=18]
-[ext_resource path="res://Entities/Player/player_down_attack_1.png" type="Texture" id=19]
-[ext_resource path="res://Entities/Player/player_down_attack_2.png" type="Texture" id=20]
-[ext_resource path="res://Entities/Player/player_up_idle_2.png" type="Texture" id=21]
-[ext_resource path="res://Entities/Player/player_right_attack_1.png" type="Texture" id=22]
-[ext_resource path="res://Entities/Player/player_right_attack_2.png" type="Texture" id=23]
-[ext_resource path="res://Entities/Player/player_up_walk_1.png" type="Texture" id=24]
-[ext_resource path="res://Entities/Player/player_up_walk_2.png" type="Texture" id=25]
+[ext_resource path="res://Entities/Player/player_down_idle_1.png" type="Texture" id=2]
+[ext_resource path="res://Entities/Player/player_down_attack_1.png" type="Texture" id=3]
+[ext_resource path="res://Entities/Player/player_down_attack_2.png" type="Texture" id=4]
+[ext_resource path="res://Entities/Player/player_left_idle_1.png" type="Texture" id=5]
+[ext_resource path="res://Entities/Player/player_left_attack_1.png" type="Texture" id=6]
+[ext_resource path="res://Entities/Player/player_left_attack_2.png" type="Texture" id=7]
+[ext_resource path="res://Entities/Player/player_right_idle_1.png" type="Texture" id=8]
+[ext_resource path="res://Entities/Player/player_right_walk_1.png" type="Texture" id=9]
+[ext_resource path="res://Entities/Player/player_right_walk_2.png" type="Texture" id=10]
+[ext_resource path="res://Entities/Player/player_right_attack_1.png" type="Texture" id=11]
+[ext_resource path="res://Entities/Player/player_right_attack_2.png" type="Texture" id=12]
+[ext_resource path="res://Entities/Player/player_up_idle_1.png" type="Texture" id=13]
+[ext_resource path="res://Entities/Player/player_up_idle_2.png" type="Texture" id=14]
+[ext_resource path="res://Entities/Player/player_left_walk_1.png" type="Texture" id=15]
+[ext_resource path="res://Entities/Player/player_left_walk_2.png" type="Texture" id=16]
+[ext_resource path="res://Entities/Player/player_left_idle_2.png" type="Texture" id=17]
+[ext_resource path="res://Entities/Player/player_right_idle_2.png" type="Texture" id=18]
+[ext_resource path="res://Entities/Player/player_up_attack_1.png" type="Texture" id=19]
+[ext_resource path="res://Entities/Player/player_up_attack_2.png" type="Texture" id=20]
+[ext_resource path="res://Entities/Player/player_down_idle_2.png" type="Texture" id=21]
+[ext_resource path="res://Entities/Player/player_up_walk_1.png" type="Texture" id=22]
+[ext_resource path="res://Entities/Player/player_up_walk_2.png" type="Texture" id=23]
+[ext_resource path="res://Entities/Player/player_down_walk_1.png" type="Texture" id=24]
+[ext_resource path="res://Entities/Player/player_down_walk_2.png" type="Texture" id=25]
 [ext_resource path="res://Entities/Player/player_right_fireball_1.png" type="Texture" id=26]
 [ext_resource path="res://Entities/Player/player_right_fireball_2.png" type="Texture" id=27]
-[ext_resource path="res://Entities/Player/player_left_fireball_1.png" type="Texture" id=28]
-[ext_resource path="res://Entities/Player/player_left_fireball_2.png" type="Texture" id=29]
-[ext_resource path="res://Entities/Player/player_down_fireball_1.png" type="Texture" id=30]
-[ext_resource path="res://Entities/Player/player_down_fireball_2.png" type="Texture" id=31]
-[ext_resource path="res://Entities/Player/player_up_fireball_1.png" type="Texture" id=32]
-[ext_resource path="res://Entities/Player/player_up_fireball_2.png" type="Texture" id=33]
+[ext_resource path="res://Entities/Player/player_up_fireball_1.png" type="Texture" id=28]
+[ext_resource path="res://Entities/Player/player_up_fireball_2.png" type="Texture" id=29]
+[ext_resource path="res://Entities/Player/player_left_fireball_1.png" type="Texture" id=30]
+[ext_resource path="res://Entities/Player/player_left_fireball_2.png" type="Texture" id=31]
+[ext_resource path="res://Entities/Player/player_down_fireball_1.png" type="Texture" id=32]
+[ext_resource path="res://Entities/Player/player_down_fireball_2.png" type="Texture" id=33]
 [ext_resource path="res://Tilesets/MapTileset.tres" type="TileSet" id=34]
 [ext_resource path="res://GUI/HealthBar.gd" type="Script" id=35]
 [ext_resource path="res://GUI/ManaBar.gd" type="Script" id=36]
@@ -44,89 +44,92 @@
 [ext_resource path="res://GUI/LevelPopup.gd" type="Script" id=42]
 [ext_resource path="res://GUI/health_bonus.png" type="Texture" id=43]
 [ext_resource path="res://GUI/mana_bonus.png" type="Texture" id=44]
-[ext_resource path="res://Entities/SkeletonSpawner/SkeletonSpawner.tscn" type="PackedScene" id=45]
-[ext_resource path="res://Entities/Potion/Potion.tscn" type="PackedScene" id=46]
+[ext_resource path="res://GUI/DialoguePopup.gd" type="Script" id=45]
+[ext_resource path="res://Entities/SkeletonSpawner/SkeletonSpawner.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Entities/Potion/Potion.tscn" type="PackedScene" id=47]
+[ext_resource path="res://Entities/Fiona/Fiona.tscn" type="PackedScene" id=48]
+[ext_resource path="res://Entities/Necklace/Necklace.tscn" type="PackedScene" id=49]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": false,
-"name": "up_attack",
+"name": "down_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "right_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "left_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "down_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "down_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "left_walk",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": false,
 "name": "left_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 17 ), ExtResource( 5 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "right_walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 19 ), ExtResource( 20 ) ],
-"loop": false,
-"name": "down_attack",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "up_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 11 ), ExtResource( 12 ) ],
 "loop": false,
 "name": "right_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 24 ), ExtResource( 2 ), ExtResource( 25 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "up_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 15 ), ExtResource( 5 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "left_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "right_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": false,
+"name": "up_attack",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 22 ), ExtResource( 13 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "up_walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 24 ), ExtResource( 2 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "down_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 26 ), ExtResource( 27 ) ],
 "loop": false,
 "name": "right_fireball",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": false,
+"name": "up_fireball",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": false,
 "name": "left_fireball",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 30 ), ExtResource( 31 ) ],
-"loop": false,
-"name": "down_fireball",
-"speed": 7.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 32 ), ExtResource( 33 ) ],
 "loop": false,
-"name": "up_fireball",
+"name": "down_fireball",
 "speed": 7.0
 } ]
 
@@ -163,9 +166,37 @@ tracks/0/keys = {
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
+[sub_resource type="Animation" id=5]
+resource_name = "ShowDialogue"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect/Dialogue:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect/Answers:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
 [node name="Root" type="Node"]
 
 [node name="Player" type="KinematicBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 160, 90 )
 z_index = 1
 input_pickable = true
@@ -174,6 +205,7 @@ script = ExtResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 1 )
 animation = "down_idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -207,6 +239,7 @@ tile_data = PoolIntArray( 393277, 4, 0, 524348, 4, 0, 589871, 4, 0, 589886, 4, 0
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Health" type="ColorRect" parent="CanvasLayer"]
+editor/display_folded = true
 margin_left = 3.0
 margin_top = 158.0
 margin_right = 77.0
@@ -222,6 +255,7 @@ margin_bottom = 8.0
 color = Color( 1, 0.196078, 0.196078, 1 )
 
 [node name="Mana" type="ColorRect" parent="CanvasLayer"]
+editor/display_folded = true
 margin_left = 3.0
 margin_top = 169.0
 margin_right = 77.0
@@ -237,6 +271,7 @@ margin_bottom = 8.0
 color = Color( 0.129412, 0.501961, 1, 1 )
 
 [node name="XP" type="ColorRect" parent="CanvasLayer"]
+editor/display_folded = true
 margin_left = 124.0
 margin_top = 158.0
 margin_right = 196.0
@@ -279,6 +314,7 @@ text = "1"
 align = 2
 
 [node name="HealthPotions" type="ColorRect" parent="CanvasLayer"]
+editor/display_folded = true
 margin_left = 243.0
 margin_top = 158.0
 margin_right = 279.0
@@ -302,6 +338,7 @@ text = "0"
 align = 2
 
 [node name="ManaPotions" type="ColorRect" parent="CanvasLayer"]
+editor/display_folded = true
 margin_left = 281.0
 margin_top = 158.0
 margin_right = 317.0
@@ -325,6 +362,7 @@ text = "0"
 align = 2
 
 [node name="GameOver" type="ColorRect" parent="CanvasLayer"]
+editor/display_folded = true
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 320.0
 margin_bottom = 180.0
@@ -342,6 +380,7 @@ align = 1
 
 [node name="LevelPopup" type="Popup" parent="CanvasLayer"]
 pause_mode = 2
+editor/display_folded = true
 visible = true
 margin_right = 100.0
 margin_bottom = 50.0
@@ -387,18 +426,73 @@ custom_fonts/font = ExtResource( 38 )
 custom_colors/font_color = Color( 0.352941, 0.352941, 0.352941, 1 )
 text = "B"
 
-[node name="SkeletonSpawner" parent="." instance=ExtResource( 45 )]
+[node name="DialoguePopup" type="Popup" parent="CanvasLayer"]
+pause_mode = 2
+editor/display_folded = true
+visible = true
+margin_right = 40.0
+margin_bottom = 40.0
+popup_exclusive = true
+script = ExtResource( 45 )
 
-[node name="Potion" parent="." instance=ExtResource( 46 )]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/DialoguePopup"]
+editor/display_folded = true
+margin_left = 10.0
+margin_top = 115.0
+margin_right = 310.0
+margin_bottom = 170.0
+
+[node name="NPCName" type="Label" parent="CanvasLayer/DialoguePopup/ColorRect"]
+margin_left = 5.0
+margin_top = 2.0
+margin_right = 295.0
+margin_bottom = 12.0
+custom_fonts/font = ExtResource( 38 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Fiona"
+
+[node name="Dialogue" type="Label" parent="CanvasLayer/DialoguePopup/ColorRect"]
+margin_left = 5.0
+margin_top = 15.0
+margin_right = 295.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 38 )
+custom_colors/font_color = Color( 0.501961, 0.501961, 0.501961, 1 )
+text = "Hello adventurer! I lost my necklace, can you find it for me?"
+autowrap = true
+
+[node name="Answers" type="Label" parent="CanvasLayer/DialoguePopup/ColorRect"]
+margin_left = 5.0
+margin_top = 43.0
+margin_right = 295.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 38 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "[A] Yes  [B] No"
+align = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/DialoguePopup"]
+anims/ShowDialogue = SubResource( 5 )
+
+[node name="SkeletonSpawner" parent="." instance=ExtResource( 46 )]
+
+[node name="Potion" parent="." instance=ExtResource( 47 )]
 position = Vector2( 190, 103 )
 
-[node name="Potion2" parent="." instance=ExtResource( 46 )]
+[node name="Potion2" parent="." instance=ExtResource( 47 )]
 position = Vector2( 196, 76 )
 type = 1
+
+[node name="Fiona" parent="." instance=ExtResource( 48 )]
+position = Vector2( 232, 55 )
+
+[node name="Necklace" parent="." instance=ExtResource( 49 )]
+position = Vector2( 475, 685 )
 [connection signal="player_level_up" from="Player" to="CanvasLayer/LevelPopup" method="_on_Player_player_level_up"]
-[connection signal="player_stats_changed" from="Player" to="CanvasLayer/Health" method="_on_Player_player_stats_changed"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/XP" method="_on_Player_player_stats_changed"]
+[connection signal="player_stats_changed" from="Player" to="CanvasLayer/Health" method="_on_Player_player_stats_changed"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/Mana" method="_on_Player_player_stats_changed"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/HealthPotions" method="_on_Player_player_stats_changed"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/ManaPotions" method="_on_Player_player_stats_changed"]
 [connection signal="animation_finished" from="Player/Sprite" to="Player" method="_on_Sprite_animation_finished"]
+[connection signal="animation_finished" from="CanvasLayer/DialoguePopup/AnimationPlayer" to="CanvasLayer/DialoguePopup" method="_on_AnimationPlayer_animation_finished"]
