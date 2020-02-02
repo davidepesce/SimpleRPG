@@ -150,9 +150,9 @@ func hit(damage):
 		$AnimatedSprite.play("death")
 		emit_signal("death")
 		# 80% probability to drop a potion on death
-		if randf() <= 0.8:
+		if rng.randf() <= 0.8:
 			var potion = potion_scene.instance()
-			potion.type = randi() % 2
+			potion.type = rng.randi() % 2
 			get_tree().root.get_node("Root").add_child(potion)
 			potion.position = position
 		# Add XP to player
