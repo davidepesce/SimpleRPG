@@ -43,7 +43,6 @@ var drag_enabled = false
 
 func _ready():
 	emit_signal("player_stats_changed", self)
-	randomize()
 
 
 func _process(delta):
