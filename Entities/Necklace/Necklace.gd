@@ -7,5 +7,10 @@ func _ready():
 
 func _on_Necklace_body_entered(body):
 	if body.name == "Player":
-		get_tree().queue_delete(self)
+		$SoundObject.play()
+		hide()
 		fiona.necklace_found = true
+
+
+func _on_SoundObject_finished():
+	get_tree().queue_delete(self)

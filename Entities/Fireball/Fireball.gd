@@ -32,7 +32,9 @@ func _on_Fireball_body_entered(body):
 	# Stop the movement and explode
 	direction = Vector2.ZERO
 	$AnimatedSprite.play("explode")
-
+	
+	# Play explosion sound
+	$SoundExplosion.play()
 
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation == "explode":

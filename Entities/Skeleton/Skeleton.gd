@@ -149,6 +149,8 @@ func hit(damage):
 		other_animation_playing = true
 		$AnimatedSprite.play("death")
 		emit_signal("death")
+		# Play death sound
+		$SoundDeath.play()
 		# 80% probability to drop a potion on death
 		if rng.randf() <= 0.8:
 			var potion = potion_scene.instance()
@@ -158,9 +160,12 @@ func hit(damage):
 		# Add XP to player
 		player.add_xp(25)
 
+
 func _on_AnimatedSprite_frame_changed():
 	if $AnimatedSprite.animation.ends_with("_attack") and $AnimatedSprite.frame == 1:
 		var target = $RayCast2D.get_collider()
 		if target != null and target.name == "Player" and player.health > 0:
 			player.hit(attack_damage)
+		# Play attack sound
+		$SoundAttack.play()
 
