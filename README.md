@@ -19,5 +19,6 @@ The tutorials so far:
 13. [Experience Points and Level advancement](https://www.davidepesce.com/2019/12/19/godot-tutorial-13-experience-points-and-level-advancement/)
 14. [NPCs, Quests and Dialogues](https://www.davidepesce.com/2020/01/27/godot-tutorial-14-npc-quest-dialogue/)
 15. [Adding sounds and music using AudioStream nodes](https://www.davidepesce.com/2020/02/07/godot-tutorial-15-sounds-music-with-audiostream/)
+16. [Pause menu. Restart and quit the game](https://www.davidepesce.com/2020/02/11/godot-tutorial-16-pause-menu-restart-quit-game/)
 
 [Bonus tutorial: Dragging the player with the mouse](https://www.davidepesce.com/2019/10/14/godot-tutorial-5-1-dragging-player-with-mouse/)
