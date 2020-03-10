@@ -122,6 +122,14 @@ func _input(event):
 					# Talk to NPC
 					target.talk()
 					return
+				if target.name == "Bed":
+					# Sleep
+					$AnimationPlayer.play("Sleep")
+					yield(get_tree().create_timer(1), "timeout")
+					health = health_max
+					mana = mana_max
+					emit_signal("player_stats_changed", self)
+					return
 			# Play attack animation
 			attack_playing = true
 			var animation = get_animation_direction(last_direction) + "_attack"
