@@ -22,5 +22,6 @@ The tutorials so far:
 16. [Pause menu. Restart and quit the game](https://www.davidepesce.com/2020/02/11/godot-tutorial-16-pause-menu-restart-quit-game/)
 17. [Exporting the project](https://www.davidepesce.com/2020/02/20/godot-tutorial-17-exporting-the-project/)
 18. [Adding a House with Interior](https://www.davidepesce.com/2020/03/10/godot-tutorial-18-adding-house-with-interior/)
+19. [Start Menu - Changing Scene - Saving and Loading the game](https://www.davidepesce.com/2020/07/31/godot-tutorial-19-start-menu-changing-scene-saving-loading-game/)
 
 [Bonus tutorial: Dragging the player with the mouse](https://www.davidepesce.com/2019/10/14/godot-tutorial-5-1-dragging-player-with-mouse/)

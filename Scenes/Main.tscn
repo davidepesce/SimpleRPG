@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://Entities/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Player/player_down_idle_1.png" type="Texture" id=2]
@@ -57,6 +57,7 @@
 [ext_resource path="res://Sounds/level_up.wav" type="AudioStream" id=55]
 [ext_resource path="res://GUI/MenuPopup.gd" type="Script" id=56]
 [ext_resource path="res://Entities/House/House.tscn" type="PackedScene" id=57]
+[ext_resource path="res://Scripts/SaveLoadGame.gd" type="Script" id=58]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -65,54 +66,14 @@ animations = [ {
 "name": "left_walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": false,
-"name": "left_attack",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "right_walk",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 13 ), ExtResource( 22 ), ExtResource( 13 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "up_walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "right_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "up_idle",
-"speed": 1.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 11 ), ExtResource( 12 ) ],
 "loop": false,
 "name": "right_attack",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 17 ) ],
-"loop": true,
-"name": "left_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "down_idle",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "down_attack",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 19 ), ExtResource( 20 ) ],
-"loop": false,
-"name": "up_attack",
 "speed": 7.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 24 ), ExtResource( 2 ), ExtResource( 25 ) ],
@@ -120,15 +81,45 @@ animations = [ {
 "name": "down_walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "up_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 19 ), ExtResource( 20 ) ],
 "loop": false,
-"name": "right_fireball",
+"name": "up_attack",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "right_walk",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": false,
-"name": "up_fireball",
+"name": "left_attack",
 "speed": 7.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "down_attack",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "right_idle",
+"speed": 1.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": false,
@@ -138,6 +129,16 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 32 ), ExtResource( 33 ) ],
 "loop": false,
 "name": "down_fireball",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": false,
+"name": "right_fireball",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": false,
+"name": "up_fireball",
 "speed": 7.0
 } ]
 
@@ -217,6 +218,7 @@ tracks/1/keys = {
 }
 
 [node name="Root" type="Node"]
+script = ExtResource( 58 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
 position = Vector2( 160, 90 )
@@ -426,6 +428,15 @@ custom_fonts/font = ExtResource( 38 )
 text = "GAME OVER"
 align = 1
 
+[node name="Label2" type="Label" parent="CanvasLayer/GameOver"]
+margin_left = 60.0
+margin_top = 150.0
+margin_right = 260.0
+margin_bottom = 160.0
+custom_fonts/font = ExtResource( 38 )
+text = "PRESS ESC TO RETURN TO MAIN MENU"
+align = 1
+
 [node name="LevelPopup" type="Popup" parent="CanvasLayer"]
 pause_mode = 2
 margin_right = 100.0
@@ -559,7 +570,7 @@ text = "RESUME GAME"
 align = 1
 valign = 1
 
-[node name="Restart" type="ColorRect" parent="CanvasLayer/MenuPopup"]
+[node name="SaveGame" type="ColorRect" parent="CanvasLayer/MenuPopup"]
 margin_left = 70.0
 margin_top = 80.0
 margin_right = 250.0
@@ -568,16 +579,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="CanvasLayer/MenuPopup/Restart"]
+[node name="Label" type="Label" parent="CanvasLayer/MenuPopup/SaveGame"]
 margin_right = 180.0
 margin_bottom = 20.0
 custom_fonts/font = ExtResource( 38 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "RESTART GAME"
+text = "SAVE GAME"
 align = 1
 valign = 1
 
-[node name="Quit" type="ColorRect" parent="CanvasLayer/MenuPopup"]
+[node name="MainMenu" type="ColorRect" parent="CanvasLayer/MenuPopup"]
 margin_left = 70.0
 margin_top = 110.0
 margin_right = 250.0
@@ -586,12 +597,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="CanvasLayer/MenuPopup/Quit"]
+[node name="Label" type="Label" parent="CanvasLayer/MenuPopup/MainMenu"]
 margin_right = 180.0
 margin_bottom = 20.0
 custom_fonts/font = ExtResource( 38 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "QUIT"
+text = "MAIN MENU"
 align = 1
 valign = 1
 
@@ -621,10 +632,10 @@ __meta__ = {
 
 [node name="SkeletonSpawner" parent="." instance=ExtResource( 46 )]
 
-[node name="Potion" parent="." instance=ExtResource( 47 )]
+[node name="StartPotion1" parent="." instance=ExtResource( 47 )]
 position = Vector2( 71, 124 )
 
-[node name="Potion2" parent="." instance=ExtResource( 47 )]
+[node name="StartPotion2" parent="." instance=ExtResource( 47 )]
 position = Vector2( 84, 145 )
 type = 1
 
@@ -637,10 +648,10 @@ position = Vector2( 475, 685 )
 [node name="House" parent="." instance=ExtResource( 57 )]
 position = Vector2( 249, 78 )
 [connection signal="player_level_up" from="Player" to="CanvasLayer/LevelPopup" method="_on_Player_player_level_up"]
-[connection signal="player_stats_changed" from="Player" to="CanvasLayer/ManaPotions" method="_on_Player_player_stats_changed"]
+[connection signal="player_stats_changed" from="Player" to="CanvasLayer/XP" method="_on_Player_player_stats_changed"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/HealthPotions" method="_on_Player_player_stats_changed"]
+[connection signal="player_stats_changed" from="Player" to="CanvasLayer/ManaPotions" method="_on_Player_player_stats_changed"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/Health" method="_on_Player_player_stats_changed"]
 [connection signal="player_stats_changed" from="Player" to="CanvasLayer/Mana" method="_on_Player_player_stats_changed"]
-[connection signal="player_stats_changed" from="Player" to="CanvasLayer/XP" method="_on_Player_player_stats_changed"]
 [connection signal="animation_finished" from="Player/Sprite" to="Player" method="_on_Sprite_animation_finished"]
 [connection signal="animation_finished" from="CanvasLayer/DialoguePopup/AnimationPlayer" to="CanvasLayer/DialoguePopup" method="_on_AnimationPlayer_animation_finished"]

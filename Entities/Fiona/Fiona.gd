@@ -129,4 +129,20 @@ func talk(answer = ""):
 					$AnimatedSprite.play("idle")
 
 
+func to_dictionary():
+	return {
+		"quest_status" : quest_status,
+		"necklace_found" : necklace_found
+	}
+
+
+func from_dictionary(data):
+	necklace_found = data.necklace_found
+	match data.quest_status:
+		0:
+			quest_status = QuestStatus.NOT_STARTED
+		1:
+			quest_status = QuestStatus.STARTED
+		2:
+			quest_status = QuestStatus.COMPLETED
 

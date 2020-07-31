@@ -24,9 +24,10 @@ func _ready():
 	rng.randomize()
 	
 	# Create skeletons
-	for i in range(start_skeletons):
-		instance_skeleton()
-	skeleton_count = start_skeletons
+	if not get_parent().load_saved_game:
+		for i in range(start_skeletons):
+			instance_skeleton()
+		skeleton_count = start_skeletons
 
 
 func instance_skeleton():
@@ -58,7 +59,7 @@ func test_position(position : Vector2):
 	cell_coord = tree_tilemap.world_to_map(position)
 	cell_type_id = tree_tilemap.get_cellv(cell_coord)
 	var no_trees = (cell_type_id != tilemap.tile_set.find_tile_by_name("Tree"))
-	
+
 	# If the two conditions are true, the position is valid
 	return grass_or_sand and no_trees
 
@@ -72,3 +73,24 @@ func _on_Timer_timeout():
 
 func _on_Skeleton_death():
 	skeleton_count = skeleton_count - 1
+
+
+func to_dictionary():
+	var skeletons = []
+	for node in get_children():
+		if node.name.find("Skeleton") >= 0:
+			skeletons.append(node.to_dictionary())
+	return skeletons
+
+
+func from_dictionary(data):
+	skeleton_count = data.size()
+	for skeleton_data in data:
+		var skeleton = skeleton_scene.instance()
+		skeleton.from_dictionary(skeleton_data)
+		add_child(skeleton)
+		skeleton.get_node("Timer").start()
+		
+		# Connect Skeleton's death signal to the spawner
+		skeleton.connect("death", self, "_on_Skeleton_death")
+
