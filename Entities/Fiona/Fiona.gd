@@ -138,11 +138,4 @@ func to_dictionary():
 
 func from_dictionary(data):
 	necklace_found = data.necklace_found
-	match data.quest_status:
-		0:
-			quest_status = QuestStatus.NOT_STARTED
-		1:
-			quest_status = QuestStatus.STARTED
-		2:
-			quest_status = QuestStatus.COMPLETED
-
+	quest_status = int(data.quest_status)
