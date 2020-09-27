@@ -20,12 +20,14 @@ func _input(event):
 		if event.scancode == KEY_A:
 			player.health_max += 50
 			player.health += 50
+			player.emit_signal("player_stats_changed", player)
 			hide()
 			set_process_input(false)
 			get_tree().paused = false
 		elif event.scancode == KEY_B:
 			player.mana_max += 50
 			player.mana += 50
+			player.emit_signal("player_stats_changed", player)
 			hide()
 			set_process_input(false)
 			get_tree().paused = false
